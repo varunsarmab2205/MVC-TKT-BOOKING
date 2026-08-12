@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ScreenRequest {
-    private int theatreId;
+    private int theatreID;
     private String name;
     private int totalSeats;
 }
