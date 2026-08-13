@@ -15,7 +15,7 @@ public class ReviewResponse {
     private int userId;
     private String username;
     private int movieId;
-    private int rating;
+    private int rating
     private String comment;
     private Timestamp createdAt;
 }
