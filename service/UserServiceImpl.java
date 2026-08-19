@@ -10,7 +10,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService{
 
     private final UserDAO userDAO;
 
@@ -61,8 +61,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean updateUserRole(int userId, String role) {
         if (userId <= 0 || role == null) {
-            throw new IllegalArgumentException("User ID and role are required.");
+            throw new IllegalArgumentException("User ID and role are required");
         }
-        return userDAO.updateUserRole(userId, role);
+        return userDAO.updateUserRole(userID, role);
     }
-}
+} 
